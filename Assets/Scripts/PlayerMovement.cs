@@ -1,28 +1,73 @@
 using System;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D playerRb;
-    public float speed;
-    void Start()
+    public BoxCollider2D groundCheck;
+    public LayerMask groundMask;
+    
+    public float groundSpeed;
+    public float jumpSpeed;
+    public float drag;
+    
+    public bool grounded;
+    
+    private float xInput;
+    private float yInput;
+
+    void Update()
     {
-        
+        CheckInput();
+        HandleJump();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        float xInput = Input.GetAxis("Horizontal");
-        float yInput = Input.GetAxis("Vertical");
+        CheckGround();
+        HandleXMovement();
+        ApplyFriction();
+    }
+    void CheckInput()
+    {
+        xInput = Input.GetAxis("Horizontal");
+        yInput = Input.GetAxis("Vertical");
+    }
 
+    void HandleXMovement()
+    {
         if (Mathf.Abs(xInput) > 0)
         {
-            playerRb.linearVelocity = new Vector2(xInput * speed, playerRb.linearVelocity.y);
+            playerRb.linearVelocity = new Vector2(xInput * groundSpeed,playerRb.linearVelocity.y);
+            Flip();
         }
+    }
 
-        if (Mathf.Abs(yInput) > 0)
+    void Flip()
+    {
+        float direction = Mathf.Sign(xInput);
+        transform.localScale = new Vector3(direction, 1, 1);
+    }
+
+    void HandleJump()
+    {
+        if (Mathf.Abs(yInput) > 0 && grounded)
         {
-            playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, yInput * speed);
+            playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, yInput * jumpSpeed);
         }
+    }
+
+    void ApplyFriction()
+    {
+        if (grounded && xInput == 0  && playerRb.linearVelocity.y <= 0)
+        {
+            playerRb.linearVelocity *= drag;
+        }
+    }
+
+    private void CheckGround()
+    {  
+       grounded = Physics2D.OverlapAreaAll(groundCheck.bounds.min, groundCheck.bounds.max, groundMask).Length > 0;  
     }
 }
