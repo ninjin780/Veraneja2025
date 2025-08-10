@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D playerRb;
     public BoxCollider2D groundCheck;
     public LayerMask groundMask;
+    public Animator animator;
     
     public float groundSpeed;
     public float jumpSpeed;
@@ -42,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
             playerRb.linearVelocity = new Vector2(xInput * groundSpeed,playerRb.linearVelocity.y);
             Flip();
         }
+        animator.SetFloat("movement", playerRb.linearVelocity.x);
     }
 
     void Flip()
