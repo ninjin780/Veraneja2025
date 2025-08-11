@@ -2,44 +2,42 @@ using UnityEngine;
 
 public class MenuPausa : MonoBehaviour
 {
-    
+
     public GameObject menuPausa;
+    public static bool IsPaused;
 
     void Start()
     {
-        // Initialize the pause menu
-        menuPausa = GameObject.Find("MenuPausa");
-        if (menuPausa != null)
-        {
-            menuPausa.SetActive(false); // Hide the menu at the start
-        }
+        menuPausa.SetActive(false);
     }
+
     void Update()
     {
-        // Check for the pause key (e.g., Escape)
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            TogglePauseMenu();
-
-
-        }
-    }
-
-    public void TogglePauseMenu()
-    {
-        if (menuPausa != null)
-        {
-            bool isActive = menuPausa.activeSelf;
-            menuPausa.SetActive(!isActive); // Toggle the menu visibility
-            // Pause or resume the game
-            if (isActive)
+            if (IsPaused)
             {
-                Time.timeScale = 1f; // Resume the game
+                ResumeGame();
             }
             else
             {
-                Time.timeScale = 0f; // Pause the game
+                PauseGame();
             }
+
         }
+    }
+
+    public void PauseGame()
+    {
+        menuPausa.SetActive(true);
+        Time.timeScale = 0f;
+        IsPaused = true;
+    }
+
+    public void ResumeGame()
+    {
+        menuPausa.SetActive(false);
+        Time.timeScale = 1f;
+        IsPaused = false;
     }
 }
