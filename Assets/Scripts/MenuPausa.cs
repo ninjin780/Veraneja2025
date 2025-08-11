@@ -1,10 +1,11 @@
 using UnityEngine;
+using System.Collections;
 
 public class MenuPausa : MonoBehaviour
 {
 
     public GameObject menuPausa;
-    public static bool IsPaused;
+    public static bool IsPaused = false;
 
     void Start()
     {

@@ -12,13 +12,14 @@ public class SceneChanger : MonoBehaviour
     {
         if (boxColliderRight.IsTouching(playerCollider))
         {
+            PlayerPrefs.SetInt("Lado Derecho",0);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
-            playerTransform.position = new Vector2(-playerTransform.position.x, playerTransform.position.y);
         }
         else if (boxColliderLeft.IsTouching(playerCollider))
         {
+            PlayerPrefs.SetInt("Lado Derecho",1);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1);
-            playerTransform.position = new Vector2(-playerTransform.position.x, playerTransform.position.y);
+            //playerTransform.position = new Vector2(-playerTransform.position.x, playerTransform.position.y);
         }
     }
 }

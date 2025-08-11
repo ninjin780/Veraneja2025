@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     
     public float groundSpeed;
     public float jumpSpeed;
+    public float minJump = 2;
+    public float maxJump = 5;
     public float drag;
     
     public bool grounded;
@@ -21,7 +23,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         CheckInput();
-        HandleJump();
     }
 
     private void FixedUpdate()
@@ -40,17 +41,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Mathf.Abs(xInput) > 0)
         {
-            playerRb.linearVelocity = new Vector2(xInput * groundSpeed,playerRb.linearVelocity.y);
+            playerRb.linearVelocity = new Vector2(xInput * groundSpeed, playerRb.linearVelocity.y);
             Flip();
         }
         animator.SetFloat("movement", playerRb.linearVelocity.x);
     }
     void HandleYMovement()
     {
-        if (Mathf.Abs(yInput) > 0)
+        if (Mathf.Abs(yInput) > 0 && grounded)
         {
-            playerRb.linearVelocity = new Vector2(xInput * groundSpeed,playerRb.linearVelocity.y);
-            Flip();
+            playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, Mathf.Clamp(yInput * jumpSpeed, minJump, maxJump));
         }
         animator.SetFloat("movement", playerRb.linearVelocity.x);
     }
@@ -62,13 +62,7 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = new Vector3(direction, 1, 1);
     }
 
-    void HandleJump()
-    {
-        if (Mathf.Abs(yInput) > 0 && grounded)
-        {
-            playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, yInput * jumpSpeed);
-        }
-    }
+   
 
     void ApplyFriction()
     {
