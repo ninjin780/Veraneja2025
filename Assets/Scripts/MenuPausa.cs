@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MenuPausa
+public class MenuPausa : MonoBehaviour
 {
     
     public GameObject menuPausa;
@@ -20,6 +20,8 @@ public class MenuPausa
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             TogglePauseMenu();
+
+
         }
     }
 
