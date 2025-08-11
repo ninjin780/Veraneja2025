@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     {
         CheckGround();
         HandleXMovement();
+        HandleYMovement();
         ApplyFriction();
     }
     void CheckInput()
@@ -35,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
         xInput = Input.GetAxis("Horizontal");
         yInput = Input.GetAxis("Vertical");
     }
-
     void HandleXMovement()
     {
         if (Mathf.Abs(xInput) > 0)
@@ -45,6 +45,16 @@ public class PlayerMovement : MonoBehaviour
         }
         animator.SetFloat("movement", playerRb.linearVelocity.x);
     }
+    void HandleYMovement()
+    {
+        if (Mathf.Abs(yInput) > 0)
+        {
+            playerRb.linearVelocity = new Vector2(xInput * groundSpeed,playerRb.linearVelocity.y);
+            Flip();
+        }
+        animator.SetFloat("movement", playerRb.linearVelocity.x);
+    }
+    
 
     void Flip()
     {
