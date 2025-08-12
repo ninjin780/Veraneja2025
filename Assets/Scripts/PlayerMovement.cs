@@ -5,21 +5,18 @@ using UnityEngine.XR;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D playerRb;
-    public BoxCollider2D groundCheck;
-    public LayerMask groundMask;
     public Animator animator;
+    public Transform player;
     
     public float groundSpeed;
-    public float jumpSpeed;
-    public float minJump = 2;
-    public float maxJump = 5;
     public float drag;
-    
-    public bool grounded;
+
+    private float encojer = 0.95f, agrandar = 1.05f;
+    private float posicionY = -3;
     
     private float xInput;
     private float yInput;
-
+    
     void Update()
     {
         CheckInput();
@@ -27,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        CheckGround();
         HandleXMovement();
         HandleYMovement();
         ApplyFriction();
@@ -48,32 +44,36 @@ public class PlayerMovement : MonoBehaviour
     }
     void HandleYMovement()
     {
-        if (Mathf.Abs(yInput) > 0 && grounded)
+        if (yInput != 0)
         {
-            playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, Mathf.Clamp(yInput * jumpSpeed, minJump, maxJump));
+            playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, yInput * groundSpeed);
+            animator.SetFloat("movement", playerRb.linearVelocity.y);
+            CambioEscala();
         }
-        animator.SetFloat("movement", playerRb.linearVelocity.x);
+        
     }
-    
-
     void Flip()
     {
         float direction = Mathf.Sign(xInput);
-        transform.localScale = new Vector3(direction, 1, 1);
+        transform.localScale = new Vector3(player.localScale.y * direction, player.localScale.y, 1);
     }
-
-   
-
     void ApplyFriction()
     {
-        if (grounded && xInput == 0  && playerRb.linearVelocity.y <= 0)
+        if (xInput == 0  && yInput == 0)
         {
             playerRb.linearVelocity *= drag;
         }
     }
 
-    private void CheckGround()
-    {  
-       grounded = Physics2D.OverlapAreaAll(groundCheck.bounds.min, groundCheck.bounds.max, groundMask).Length > 0;  
+    void CambioEscala()
+    {
+        if (yInput < 0 && player.localScale.y < 1 && playerRb.position.y < posicionY)
+        {
+            player.localScale = new Vector3(player.localScale.x * agrandar, player.localScale.y * agrandar, 1);
+        }
+        else if (yInput > 0 && player.localScale.y >= 0.6 && playerRb.position.y > posicionY)
+        {
+            player.localScale = new Vector3(player.localScale.x * encojer, player.localScale.y * encojer, 1);
+        }
     }
 }
