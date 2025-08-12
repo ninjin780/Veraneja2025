@@ -1,3 +1,4 @@
+using System.Threading;
 using UnityEngine;
 
 public class ChangeAnimations : MonoBehaviour
@@ -10,7 +11,7 @@ public class ChangeAnimations : MonoBehaviour
     {
         animator.SetInteger("time",time);
         time++;
-        if (time > 120)
+        if (time > 240)
         {
             time = 0;
         }
