@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 7402620772641981470}
   - component: {fileID: 5777709108908387133}
   - component: {fileID: 7711699539880179321}
+  - component: {fileID: 5879008279178257389}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -168,7 +169,6 @@ MonoBehaviour:
   animator: {fileID: 5777709108908387133}
   player: {fileID: 862367980877993034}
   groundSpeed: 4
-  jumpSpeed: 5
   drag: 0
 --- !u!114 &8715061807321777495
 MonoBehaviour:
@@ -271,3 +271,15 @@ MonoBehaviour:
   playerTransform: {fileID: 862367980877993034}
   transformDerecho: {fileID: 0}
   transformIzquierdo: {fileID: 0}
+--- !u!114 &5879008279178257389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9072985079151207857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35def54b2a747d44aa39fabbbaa2676b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
