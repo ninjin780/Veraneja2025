@@ -4,15 +4,9 @@ public class SceneLoader : MonoBehaviour
 {
     public void Jugar()
     {
-        PlayerPrefs.SetInt("Inicio",0);
+        PlayerPrefs.SetInt("SpawnPosition",4);
         SceneManager.LoadScene(4);
     }
-
-    public void ContinuarPartida()
-    {
-        
-    }
-
     public void Opciones()
     {
         SceneManager.LoadScene(1);
@@ -21,7 +15,6 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
-    
     public void Salir()
     {
         Application.Quit();

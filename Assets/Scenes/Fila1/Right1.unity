@@ -497,6 +497,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7711699539880179321, guid: 1ba8bb4beea3ff64da60b02322d5e9ee, type: 3}
+      propertyPath: transformAbajo
+      value: 
+      objectReference: {fileID: 3249650089147194607}
+    - target: {fileID: 7711699539880179321, guid: 1ba8bb4beea3ff64da60b02322d5e9ee, type: 3}
+      propertyPath: transformMedio
+      value: 
+      objectReference: {fileID: 3249650089147194606}
+    - target: {fileID: 7711699539880179321, guid: 1ba8bb4beea3ff64da60b02322d5e9ee, type: 3}
       propertyPath: transformDerecho
       value: 
       objectReference: {fileID: 1725001505}
@@ -1053,6 +1061,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64580ca842c015949813ed86b008ab28, type: 3}
+--- !u!4 &3249650089147194606 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7699973590307820893, guid: 64580ca842c015949813ed86b008ab28, type: 3}
+  m_PrefabInstance: {fileID: 3249650089147194605}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3249650089147194607 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8985381491768091064, guid: 64580ca842c015949813ed86b008ab28, type: 3}
+  m_PrefabInstance: {fileID: 3249650089147194605}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -6,10 +6,17 @@ public class HoleInteraction : MonoBehaviour
   
     public void Interact1()
     {
+        PlayerPrefs.SetInt("SpawnPosition",0);
         SceneManager.LoadScene(10);
     }
     public void Interact2()
     {
+        PlayerPrefs.SetInt("SpawnPosition",2);
         SceneManager.LoadScene(11);
+    }
+    public void Interact3()
+    {
+        PlayerPrefs.SetInt("SpawnPosition",2);
+        SceneManager.LoadScene(18);
     }
 }

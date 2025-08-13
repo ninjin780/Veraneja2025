@@ -11,12 +11,12 @@ public class SceneChanger : MonoBehaviour
     {
         if (boxColliderRight.IsTouching(playerCollider))
         {
-            PlayerPrefs.SetInt("Lado Derecho",0);
+            PlayerPrefs.SetInt("SpawnPosition",0);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }
         else if (boxColliderLeft.IsTouching(playerCollider))
         {
-            PlayerPrefs.SetInt("Lado Derecho",1);
+            PlayerPrefs.SetInt("SpawnPosition",1);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1);
         }
     }
