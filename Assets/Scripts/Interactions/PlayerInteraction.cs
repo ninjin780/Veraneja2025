@@ -80,11 +80,6 @@ public class PlayerInteraction : MonoBehaviour
                        collider.TryGetComponent(out SceneChangerUp sceneChangeUp);
                        sceneChangeUp.Interact7();
                    }
-                   else if (collider.name == "yisus")
-                   {
-                       collider.TryGetComponent(out NPCsInteractions npcsInteraction);
-                       npcsInteraction.Interact1();
-                   }
                }
         }
     }

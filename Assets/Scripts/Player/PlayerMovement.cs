@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR;
 
 public class PlayerMovement : MonoBehaviour
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
         HandleXMovement();
         HandleYMovement();
         ApplyFriction();
+        CambioEscala();
     }
     void CheckInput()
     {
@@ -44,11 +46,10 @@ public class PlayerMovement : MonoBehaviour
     }
     void HandleYMovement()
     {
-        if (yInput != 0)
+        if (yInput != 0 && SceneManager.GetActiveScene().buildIndex != 19)
         {
             playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, yInput * groundSpeed);
             animator.SetFloat("movement", playerRb.linearVelocity.y);
-            CambioEscala();
         }
         
     }
@@ -67,13 +68,21 @@ public class PlayerMovement : MonoBehaviour
 
     void CambioEscala()
     {
-        if (yInput < 0 && player.localScale.y < 1 && playerRb.position.y < posicionY)
+        if (SceneManager.GetActiveScene().buildIndex != 19)
         {
-            player.localScale = new Vector3(player.localScale.x * agrandar, player.localScale.y * agrandar, 1);
+            if (yInput < 0 && player.localScale.y < 1 && playerRb.position.y < posicionY)
+            {
+                player.localScale = new Vector3(player.localScale.x * agrandar, player.localScale.y * agrandar, 1);
+            }
+            else if (yInput > 0 && player.localScale.y >= 0.6 && playerRb.position.y > posicionY)
+            {
+                player.localScale = new Vector3(player.localScale.x * encojer, player.localScale.y * encojer, 1);
+            }
         }
-        else if (yInput > 0 && player.localScale.y >= 0.6 && playerRb.position.y > posicionY)
+        else
         {
-            player.localScale = new Vector3(player.localScale.x * encojer, player.localScale.y * encojer, 1);
+            player.localScale = new Vector3(0.6f,0.6f,1);
+            Flip();
         }
     }
 }

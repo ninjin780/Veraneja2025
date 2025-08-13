@@ -63,7 +63,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Fila4/Right2.unity
     guid: 5fc1ad59337ba914cbf5a442206916cc
   - enabled: 1
-    path: Assets/Scenes/Fila5/Left1.unity
+    path: Assets/Scenes/Fila5/Boss.unity
     guid: b40b72c18574c254cae029ccbd8b989f
   - enabled: 1
     path: Assets/Scenes/Fila5/Mid.unity
