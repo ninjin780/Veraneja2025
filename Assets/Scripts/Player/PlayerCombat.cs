@@ -8,21 +8,25 @@ public class PlayerCombat : MonoBehaviour
     public Animator animator;
     public Transform attackPoint;
     public float attackRange = 0.5f;
-    public bool attacking = false;
     public LayerMask enemyLayers;
     public static float vidaActual = 100;
-    
+    public int lastAttack = 0;
+    public int time = 0;
+
+    private void FixedUpdate()
+    {
+        time++; // 50 = 1s
+    }
+
     void Update()
     {
-
-
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (attacking == false)
+            if (time - lastAttack > 50)
             {
+                lastAttack = time;
                 Attack();
             }
-            
         }
     }
 
