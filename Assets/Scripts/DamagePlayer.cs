@@ -3,6 +3,7 @@ using UnityEngine;
 public class DamagePlayer : MonoBehaviour
 {
     private Vector3 position;
+    public GameObject monstotr;
 
     public int maxHp = 30;
     public int currentHp;
@@ -50,7 +51,6 @@ public class DamagePlayer : MonoBehaviour
     private void Die()
     {
         Debug.Log("monstro has died");
-       
-
+        monstotr.SetActive(false);
     }
 }

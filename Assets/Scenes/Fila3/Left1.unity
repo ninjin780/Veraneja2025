@@ -214,6 +214,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 915117055}
     m_Modifications:
+    - target: {fileID: 1091934187110231169, guid: 0b2d7da22349ba041aaf088b1dc970cd, type: 3}
+      propertyPath: monstotr
+      value: 
+      objectReference: {fileID: 153205223}
     - target: {fileID: 2661046412330086257, guid: 0b2d7da22349ba041aaf088b1dc970cd, type: 3}
       propertyPath: m_Name
       value: Enemy1
@@ -266,6 +270,11 @@ PrefabInstance:
 --- !u!4 &153205222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4644383686000552592, guid: 0b2d7da22349ba041aaf088b1dc970cd, type: 3}
+  m_PrefabInstance: {fileID: 153205221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &153205223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2661046412330086257, guid: 0b2d7da22349ba041aaf088b1dc970cd, type: 3}
   m_PrefabInstance: {fileID: 153205221}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &208144600
@@ -1375,6 +1384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy2
       objectReference: {fileID: 0}
+    - target: {fileID: 8144630158186234380, guid: 2224ec6ee7921374ebaaa3593114a099, type: 3}
+      propertyPath: monstotr
+      value: 
+      objectReference: {fileID: 1982684094}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1383,6 +1396,11 @@ PrefabInstance:
 --- !u!4 &1982684093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3381735824775137366, guid: 2224ec6ee7921374ebaaa3593114a099, type: 3}
+  m_PrefabInstance: {fileID: 1982684092}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1982684094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5983041634048464815, guid: 2224ec6ee7921374ebaaa3593114a099, type: 3}
   m_PrefabInstance: {fileID: 1982684092}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1255149804029071719
