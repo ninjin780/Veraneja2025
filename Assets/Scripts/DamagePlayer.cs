@@ -12,13 +12,15 @@ public class DamagePlayer : MonoBehaviour
         currentHp = maxHp;
     }
 
+    private int time;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            collision.gameObject.GetComponent<PlayerCombat>().RemoveLife(5);
+
+
             position = collision.gameObject.GetComponent<Transform>().localPosition;
-            Debug.Log("Damage");
-            collision.gameObject.GetComponent<PlayerCombat>().RemoveLife(3); 
             if (position.x >= 0)
             {
                 position = new Vector3(position.x - 1.5f, position.y, position.z);

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7372467909664043095}
   - component: {fileID: 4185048211457828163}
   - component: {fileID: 3441819931424484890}
+  - component: {fileID: 7134909250930556527}
   m_Layer: 0
   m_Name: yisus
   m_TagString: Untagged
@@ -195,4 +196,19 @@ MonoBehaviour:
   - Soy solo un misero cura que intenta ayudar a los habitantes.
   - "\xA1Puede que sean de alguien de aqui!"
   wordSpeed: 0.06
+  playerIsClose: 0
+--- !u!114 &7134909250930556527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857594711659832570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79b4e631f958bd488fe665d7ef67768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 0}
+  flechita: {fileID: 0}
   playerIsClose: 0
