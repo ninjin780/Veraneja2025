@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -6,6 +8,7 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
+    public int life = 100;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
@@ -29,4 +32,13 @@ public class PlayerCombat : MonoBehaviour
     {
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
+
+    public void RemoveLife (int damage) {
+
+        this.life = this.life - damage;
+        Debug.Log(damage);
+        Debug.Log(this.life);
+
+    }
+
 }
