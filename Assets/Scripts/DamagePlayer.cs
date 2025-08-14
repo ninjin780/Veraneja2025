@@ -12,11 +12,13 @@ public class DamagePlayer : MonoBehaviour
             collision.gameObject.GetComponent<PlayerCombat>().RemoveLife(3); 
             if (position.x >= 0)
             {
-                position = new Vector3(position.x - 25, position.y, 1);
+                position = new Vector3(position.x - 1.5f, position.y, position.z);
+                collision.gameObject.GetComponent<Transform>().localPosition = position;
             }
             else
             {
-                position = new Vector3(position.x + 25, position.y, 1); 
+                position = new Vector3(position.x + 1.5f, position.y, position.z); 
+                collision.gameObject.GetComponent<Transform>().localPosition = position;
             }
             
         }
