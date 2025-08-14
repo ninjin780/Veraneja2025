@@ -18,7 +18,7 @@ public class Animations : MonoBehaviour
             attack = false;
         }
 
-        if (time > 50)
+        if (time > 100)
         {
             attack  = true;
         }
