@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: a0a7387f4f2bd564baba3037cacc57c8
+guid: d82e78b919a7347449b3e09649bd2720
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1210338707794677763
-    second: bossEstalactitas_0
-  - first:
-      213: -3839068034716487267
-    second: bossEstalactitas_1
-  - first:
-      213: -6644262807416438573
-    second: bossEstalactitas_2
+      213: 5936015815965194476
+    second: Se_nusca_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bossEstalactitas_2
+      name: Se_nusca_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 1046
+        y: 61
+        width: 173
+        height: 264
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d08a91fd26dac3a0800000000000000
-      internalID: -6644262807416438573
+      spriteID: ce8b4bb2fe6f06250800000000000000
+      internalID: 5936015815965194476
       vertices: []
       indices: 
       edges: []
@@ -131,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 49dbc3c919632534185547e16eab7ddc
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -141,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bossEstalactitas_0: -1210338707794677763
-      bossEstalactitas_1: -3839068034716487267
-      bossEstalactitas_2: -6644262807416438573
+      Se_nusca_0: 5936015815965194476
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
