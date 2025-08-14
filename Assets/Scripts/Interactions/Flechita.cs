@@ -6,7 +6,7 @@ public class Flechita : MonoBehaviour
     public GameObject panel;
     public GameObject flechita;
     
-    public bool playerIsClose;
+    private bool playerIsClose;
     private bool flechaSalida;
     void Update()
     {

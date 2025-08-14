@@ -7,7 +7,11 @@ public class NPCsInteractions : MonoBehaviour
 {
    public GameObject contButton;
    public GameObject dialoguePanel;
+   public GameObject NPC;
+   
    public TMPro.TMP_Text dialogueText;
+   public TMPro.TMP_Text name;
+   
    public string [] dialogue;
    private int index;
 
@@ -26,6 +30,7 @@ public class NPCsInteractions : MonoBehaviour
          else
          {
             dialoguePanel.SetActive(true);
+            name.text = NPC.name;
             StartCoroutine(Typing());
          }
       }
@@ -39,6 +44,7 @@ public class NPCsInteractions : MonoBehaviour
    public void zeroText()
    {
       dialogueText.text = "";
+      name.text = "";
       index = 0;
       dialoguePanel.SetActive(false);
       

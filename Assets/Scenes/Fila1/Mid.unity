@@ -179,7 +179,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2415813129297276950, guid: d1f50099e848fc2478830329999caf05, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -281,7 +281,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 2106686541, guid: 3138cb920bfaa7f4c8590c3e7a7bec40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -823,7 +823,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 260381905120665989, guid: 3138cb920bfaa7f4c8590c3e7a7bec40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -835,17 +835,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 2
   m_SpriteSortPoint: 0
---- !u!114 &867843444 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3441819931424484890, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
-  m_PrefabInstance: {fileID: 3215984774470373988}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f3559000f3e7f1488210554b1764559, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &905060424 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1778997651010361972, guid: bd143db06d99dad438a40843347642c4, type: 3}
@@ -905,6 +894,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4395633369687376126, guid: 1ba8bb4beea3ff64da60b02322d5e9ee, type: 3}
       propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395633369687376126, guid: 1ba8bb4beea3ff64da60b02322d5e9ee, type: 3}
+      propertyPath: m_MaskInteraction
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7711699539880179321, guid: 1ba8bb4beea3ff64da60b02322d5e9ee, type: 3}
@@ -992,7 +985,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 2660195087753647290, guid: d30f652cc7d587848a9f8b156f404f65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1224,7 +1217,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 5936015815965194476, guid: d82e78b919a7347449b3e09649bd2720, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1401,7 +1394,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 467018513501440571, guid: 7416566f9c4d75f4bb7ed47aee61e903, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1619,8 +1612,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1857594711659832570, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
       propertyPath: m_Name
-      value: yisus
+      value: Yisus
       objectReference: {fileID: 0}
+    - target: {fileID: 2466236803966100167, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441819931424484890, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
+      propertyPath: NPC
+      value: 
+      objectReference: {fileID: 3215984774470373989}
+    - target: {fileID: 3441819931424484890, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
+      propertyPath: name
+      value: 
+      objectReference: {fileID: 8340670170202163977}
     - target: {fileID: 3441819931424484890, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
       propertyPath: contButton
       value: 
@@ -1633,6 +1638,18 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 905060424}
+    - target: {fileID: 3441819931424484890, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441819931424484890, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
+      propertyPath: 'dialogue.Array.data[2]'
+      value: "He escuchado un grito hac\xEDa abajo, dentro del bosque."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441819931424484890, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
+      propertyPath: 'dialogue.Array.data[4]'
+      value: "\xA1Puede que sean de alguien de aqui!"
+      objectReference: {fileID: 0}
     - target: {fileID: 7134909250930556527, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
       propertyPath: panel
       value: 
@@ -1641,10 +1658,6 @@ PrefabInstance:
       propertyPath: flechita
       value: 
       objectReference: {fileID: 1420943185}
-    - target: {fileID: 7134909250930556527, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
-      propertyPath: playerIsClose
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8858043707927033561, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.33
@@ -1688,8 +1701,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1857594711659832570, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3215984774470373996}
   m_SourcePrefab: {fileID: 100100000, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
+--- !u!1 &3215984774470373989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1857594711659832570, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
+  m_PrefabInstance: {fileID: 3215984774470373988}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3215984774470373996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3215984774470373989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f3559000f3e7f1488210554b1764559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contButton: {fileID: 1537662839}
+  dialoguePanel: {fileID: 905060424}
+  NPC: {fileID: 3215984774470373989}
+  dialogueText: {fileID: 399367982}
+  name: {fileID: 8340670170202163977}
+  dialogue:
+  - puta
+  wordSpeed: 0
+  playerIsClose: 0
 --- !u!1001 &3249650089147194605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1900,7 +1942,11 @@ PrefabInstance:
     - target: {fileID: 510120720521491247, guid: bd143db06d99dad438a40843347642c4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 867843444}
+      objectReference: {fileID: 3215984774470373996}
+    - target: {fileID: 510120720521491247, guid: bd143db06d99dad438a40843347642c4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLine
+      objectReference: {fileID: 0}
     - target: {fileID: 1628187514200470202, guid: bd143db06d99dad438a40843347642c4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1985,11 +2031,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogos
       objectReference: {fileID: 0}
+    - target: {fileID: 7740653845092973361, guid: bd143db06d99dad438a40843347642c4, type: 3}
+      propertyPath: NPC
+      value: 
+      objectReference: {fileID: 3215984774470373989}
+    - target: {fileID: 7740653845092973361, guid: bd143db06d99dad438a40843347642c4, type: 3}
+      propertyPath: 'dialogue.Array.data[0]'
+      value: "\xA1Hola!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7740653845092973361, guid: bd143db06d99dad438a40843347642c4, type: 3}
+      propertyPath: 'dialogue.Array.data[1]'
+      value: "\xBFQuieres saber cuanto vale tu coche?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7740653845092973361, guid: bd143db06d99dad438a40843347642c4, type: 3}
+      propertyPath: 'dialogue.Array.data[2]'
+      value: En compramostucoche.es te lo dicen
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd143db06d99dad438a40843347642c4, type: 3}
+--- !u!114 &8340670170202163977 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4397186402698395086, guid: bd143db06d99dad438a40843347642c4, type: 3}
+  m_PrefabInstance: {fileID: 8340670170202163976}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

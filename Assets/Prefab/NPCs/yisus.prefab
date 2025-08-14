@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8268110416348934958}
   - component: {fileID: 7372467909664043095}
   - component: {fileID: 4185048211457828163}
-  - component: {fileID: 3441819931424484890}
   - component: {fileID: 7134909250930556527}
   m_Layer: 0
   m_Name: yisus
@@ -173,30 +172,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.61, y: 3.46}
   m_EdgeRadius: 0
---- !u!114 &3441819931424484890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857594711659832570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f3559000f3e7f1488210554b1764559, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contButton: {fileID: 0}
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
-  dialogue:
-  - "\xA1Hola viajero!"
-  - Hace tiempo que estamos sufriendo desapariciones por el pueblo.
-  - "He escuchado un grito hac\xEDa abajo, dentro del bosque.con la gracia de dios."
-  - "\xBFCrees que podr\xEDas hacerme el favor e ir a investigar esos gritos?"
-  - Soy solo un misero cura que intenta ayudar a los habitantes.
-  - "\xA1Puede que sean de alguien de aqui!"
-  wordSpeed: 0.06
-  playerIsClose: 0
 --- !u!114 &7134909250930556527
 MonoBehaviour:
   m_ObjectHideFlags: 0
