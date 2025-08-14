@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using static UnityEngine.EventSystems.EventTrigger;
 
 public class PlayerCombat : MonoBehaviour
@@ -7,13 +8,23 @@ public class PlayerCombat : MonoBehaviour
     public Animator animator;
     public Transform attackPoint;
     public float attackRange = 0.5f;
+    public bool attacking = false;
     public LayerMask enemyLayers;
-    public int life = 100;
+    public float vidaActual = 100;
+    
     void Update()
     {
+
+
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Attack();
+            if (attacking == false)
+            {
+                attacking = true;
+                Attack();
+                attacking = false;
+            }
+            
         }
     }
 
@@ -35,9 +46,9 @@ public class PlayerCombat : MonoBehaviour
 
     public void RemoveLife (int damage) {
 
-        this.life = this.life - damage;
+        this.vidaActual = this.vidaActual - damage;
         Debug.Log(damage);
-        Debug.Log(this.life);
+        Debug.Log(this.vidaActual);
 
     }
 
