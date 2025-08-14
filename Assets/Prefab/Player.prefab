@@ -191,7 +191,6 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 256
-  vidaActual: 100
 --- !u!61 &7402620772641981470
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -393,6 +392,14 @@ PrefabInstance:
     - target: {fileID: 2694347296069218619, guid: d077c4d3cadc3ac4a860e55bf647280d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573053270726677086, guid: d077c4d3cadc3ac4a860e55bf647280d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573053270726677086, guid: d077c4d3cadc3ac4a860e55bf647280d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
