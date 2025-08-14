@@ -3,6 +3,15 @@ using UnityEngine;
 public class DamagePlayer : MonoBehaviour
 {
     private Vector3 position;
+
+    public int maxHp = 30;
+    public int currentHp;
+
+    private void Start()
+    {
+        currentHp = maxHp;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -24,8 +33,22 @@ public class DamagePlayer : MonoBehaviour
         }
     }
 
-    void recieveDamage()
+    public void recieveDamage(int dmg)
     {
+
+        currentHp -= dmg;
+
+        if (currentHp <= 0)
+        {
+            Die();
+        }
+        
+    }
+
+    private void Die()
+    {
+        Debug.Log("monstro has died");
+       
 
     }
 }

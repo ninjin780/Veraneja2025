@@ -13,6 +13,7 @@ public class PlayerCombat : MonoBehaviour
     public static float vidaActual = 100;
     public int lastAttack = 0;
     public int time = 0;
+    public int attackDamage = 10;
 
     private void FixedUpdate()
     {
@@ -38,6 +39,8 @@ public class PlayerCombat : MonoBehaviour
         foreach (Collider2D enemy in hitEnemies)
         {
             Debug.Log("Hit" + enemy.name);
+            enemy.GetComponent<DamagePlayer>().recieveDamage(attackDamage);
+
         }
     }
 
