@@ -10,7 +10,7 @@ public class PlayerCombat : MonoBehaviour
     public float attackRange = 0.5f;
     public bool attacking = false;
     public LayerMask enemyLayers;
-    public float vidaActual = 100;
+    public static float vidaActual = 100;
     
     void Update()
     {
@@ -46,9 +46,9 @@ public class PlayerCombat : MonoBehaviour
 
     public void RemoveLife (int damage) {
 
-        this.vidaActual = this.vidaActual - damage;
+        vidaActual = vidaActual - damage;
         Debug.Log(damage);
-        Debug.Log(this.vidaActual);
+        Debug.Log(vidaActual);
 
     }
 

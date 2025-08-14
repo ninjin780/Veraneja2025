@@ -5,18 +5,18 @@ public class BarraVida : MonoBehaviour
 {
 
     public Image barraVida;
-    private PlayerCombat pc;
     public float vidaMaxima = 100;
 
     private void Start()
     {
-        pc = GameObject.Find("Player").GetComponent<PlayerCombat>();
+        vidaMaxima = 100;
     }
 
     private void Update()
     {
-        barraVida.fillAmount = pc.vidaActual / vidaMaxima;
-        Debug.Log("VA" + pc.vidaActual);
+        barraVida.fillAmount = PlayerCombat.vidaActual / vidaMaxima;
+        Debug.Log("VA" + PlayerCombat.vidaActual);
         Debug.Log("VM" + vidaMaxima);
+        Debug.Log("BA" + PlayerCombat.vidaActual / vidaMaxima);
     }
 }
