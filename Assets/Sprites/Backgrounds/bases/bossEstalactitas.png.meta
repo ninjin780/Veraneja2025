@@ -106,59 +106,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bossEstalactitas_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 827
-        width: 601
-        height: 253
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dff2eff9b53043fe0800000000000000
-      internalID: -1210338707794677763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bossEstalactitas_1
-      rect:
-        serializedVersion: 2
-        x: 1175
-        y: 807
-        width: 745
-        height: 273
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d91ba2276f3e8bac0800000000000000
-      internalID: -3839068034716487267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bossEstalactitas_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 1920
-        height: 129
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,7 +131,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 49dbc3c919632534185547e16eab7ddc
     internalID: 0
     vertices: []
     indices: 
