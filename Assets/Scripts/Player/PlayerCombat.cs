@@ -20,9 +20,7 @@ public class PlayerCombat : MonoBehaviour
         {
             if (attacking == false)
             {
-                attacking = true;
                 Attack();
-                attacking = false;
             }
             
         }
@@ -47,8 +45,6 @@ public class PlayerCombat : MonoBehaviour
     public void RemoveLife (int damage) {
 
         vidaActual = vidaActual - damage;
-        Debug.Log(damage);
-        Debug.Log(vidaActual);
 
     }
 

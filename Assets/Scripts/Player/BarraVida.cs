@@ -15,8 +15,5 @@ public class BarraVida : MonoBehaviour
     private void Update()
     {
         barraVida.fillAmount = PlayerCombat.vidaActual / vidaMaxima;
-        Debug.Log("VA" + PlayerCombat.vidaActual);
-        Debug.Log("VM" + vidaMaxima);
-        Debug.Log("BA" + PlayerCombat.vidaActual / vidaMaxima);
     }
 }
