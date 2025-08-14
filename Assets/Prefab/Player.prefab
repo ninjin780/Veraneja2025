@@ -187,10 +187,11 @@ MonoBehaviour:
   animator: {fileID: 5777709108908387133}
   attackPoint: {fileID: 3199885136094804089}
   attackRange: 1.15
-  attacking: 0
   enemyLayers:
     serializedVersion: 2
     m_Bits: 256
+  lastAttack: 0
+  time: 0
 --- !u!61 &7402620772641981470
 BoxCollider2D:
   m_ObjectHideFlags: 0
