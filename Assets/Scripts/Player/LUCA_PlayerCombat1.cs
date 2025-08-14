@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using static UnityEngine.EventSystems.EventTrigger;
 
-public class PlayerCombat : MonoBehaviour
+public class LUCA_PlayerCombat : MonoBehaviour
 {
     public Animator animator;
     public Transform attackPoint;
@@ -11,21 +11,20 @@ public class PlayerCombat : MonoBehaviour
     public bool attacking = false;
     public LayerMask enemyLayers;
     public static float vidaActual = 100;
-    public int lastAttack = 0;
-    public int time = 0;
+    public int asljdb = 0; 
+    
+    void FixedUpdate()
+    {
 
-    private void FixedUpdate()
-    {
-        time++;
-    }
-    void Update()
-    {
+
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (time - lastAttack > 50)
+            if (attacking == false)
             {
-                lastAttack = time;
-                Attack();
+                if (Time.deltaTime - asljdb >= 50)
+                {
+                    Attack();
+                }
             }
         }
     }
