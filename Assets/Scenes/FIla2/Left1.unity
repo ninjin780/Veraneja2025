@@ -617,6 +617,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4353944617508702440, guid: 64580ca842c015949813ed86b008ab28, type: 3}
   m_PrefabInstance: {fileID: 3249650089147194605}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &694712814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4613687251672367389, guid: 821cee49c26266d4f99e2e04887e9813, type: 3}
+  m_PrefabInstance: {fileID: 713889908}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &713889908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -633,6 +638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy3
       objectReference: {fileID: 0}
+    - target: {fileID: 5502608529258232959, guid: 821cee49c26266d4f99e2e04887e9813, type: 3}
+      propertyPath: monstotr
+      value: 
+      objectReference: {fileID: 694712814}
     - target: {fileID: 5653486339611495094, guid: 821cee49c26266d4f99e2e04887e9813, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.37
@@ -1002,6 +1011,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5502608529258232959, guid: 821cee49c26266d4f99e2e04887e9813, type: 3}
+      propertyPath: monstotr
+      value: 
+      objectReference: {fileID: 1213664551}
     - target: {fileID: 5653486339611495094, guid: 821cee49c26266d4f99e2e04887e9813, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.28

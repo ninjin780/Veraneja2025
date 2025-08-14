@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEngine.EventSystems.EventTrigger;
+using UnityEngine.SceneManagement;
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class PlayerCombat : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (time - lastAttack > 50)
             {
@@ -52,6 +53,12 @@ public class PlayerCombat : MonoBehaviour
     public void RemoveLife (int damage) {
 
         vidaActual = vidaActual - damage;
+
+        if (vidaActual <= 0)
+        {
+            Debug.Log("Player has died");
+            SceneManager.LoadScene(0);
+        }
 
     }
 
