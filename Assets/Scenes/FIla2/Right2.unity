@@ -1071,6 +1071,10 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 450993656}
+    - target: {fileID: 3198844610317336824, guid: e460b861671ae854fa13e3ce7ff608fe, type: 3}
+      propertyPath: 'dialogue.Array.data[1]'
+      value: "Sigue siendo un caos ah\xED fuera. Espero acabe pronto."
+      objectReference: {fileID: 0}
     - target: {fileID: 3603560211752323671, guid: e460b861671ae854fa13e3ce7ff608fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.14

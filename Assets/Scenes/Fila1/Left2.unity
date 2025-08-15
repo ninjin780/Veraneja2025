@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Virgil
       objectReference: {fileID: 0}
+    - target: {fileID: 8302896450585816754, guid: 7a8dbfcf5d540924994a8f19b24f0456, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8805576130324605307, guid: 7a8dbfcf5d540924994a8f19b24f0456, type: 3}
       propertyPath: m_Controller
       value: 
@@ -401,6 +405,18 @@ PrefabInstance:
     - target: {fileID: 7000469639105312814, guid: 6ca634d12f6694141a02c65182b4034a, type: 3}
       propertyPath: m_Name
       value: Ranastacio
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273442348196847319, guid: 6ca634d12f6694141a02c65182b4034a, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273442348196847319, guid: 6ca634d12f6694141a02c65182b4034a, type: 3}
+      propertyPath: 'dialogue.Array.data[0]'
+      value: "Todavia no puedo creer que esto est\xE9 pasando. Qu\xE9 terrible suceso"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273442348196847319, guid: 6ca634d12f6694141a02c65182b4034a, type: 3}
+      propertyPath: 'dialogue.Array.data[1]'
+      value: Muchas gracias por ayudarnos, animal picudo, regresaremos a la aldea.
       objectReference: {fileID: 0}
     - target: {fileID: 7729345253799519174, guid: 6ca634d12f6694141a02c65182b4034a, type: 3}
       propertyPath: m_Controller
