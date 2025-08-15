@@ -71,6 +71,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus/DeadMenu.unity
     guid: a62795aa4d6b1b8418c322146704e55e
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 73c54fbc80b5eb24e8cfc0aa3b28acef
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

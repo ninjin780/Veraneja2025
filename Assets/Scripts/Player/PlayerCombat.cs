@@ -42,7 +42,6 @@ public class PlayerCombat : MonoBehaviour
         {
             Debug.Log("Hit" + enemy.name);
             enemy.GetComponent<DamagePlayer>().recieveDamage(attackDamage);
-
         }
     }
 

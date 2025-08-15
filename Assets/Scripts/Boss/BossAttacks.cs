@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossAttacks : MonoBehaviour
 {
@@ -288,6 +289,7 @@ public class BossAttacks : MonoBehaviour
     {
         Debug.Log("¡El jefe ha sido derrotado!");
         StopAllAttacks();
+        SceneManager.LoadScene(22);
     }
     
     // Método para actualizar referencias cuando cambie el jugador

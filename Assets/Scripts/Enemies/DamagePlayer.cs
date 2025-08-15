@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DamagePlayer : MonoBehaviour
 {
@@ -52,5 +53,6 @@ public class DamagePlayer : MonoBehaviour
     {
         Debug.Log("monstro has died");
         monstotr.SetActive(false);
+        SceneManager.LoadScene(22);
     }
 }

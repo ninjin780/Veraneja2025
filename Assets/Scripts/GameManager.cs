@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     private AudioSource audioSource;
     
     // Referencias a otros sistemas
+    public BoxCollider2D jefe;
     private BossAttacks bossAttacks;
     
     void Start()
@@ -151,13 +152,6 @@ public class GameManager : MonoBehaviour
         foreach (DamagePlayer damage in damageScripts)
         {
             // Si tienes un método para actualizar referencias, llamarlo aquí
-        }
-        
-        // Buscar NPCs y otros sistemas
-        NPCsInteractions[] npcs = FindObjectsOfType<NPCsInteractions>();
-        foreach (NPCsInteractions npc in npcs)
-        {
-            // Actualizar referencias si es necesario
         }
     }
     
