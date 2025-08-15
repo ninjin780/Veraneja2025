@@ -175,25 +175,9 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        SceneManager.LoadScene(22);
+        SceneManager.LoadScene(21);
         
         
         Debug.Log("Implementar lógica de Game Over aquí");
-    }
-    
-    // Métodos públicos para obtener información
-    public GameObject GetCurrentPlayer()
-    {
-        return currentPlayer;
-    }
-    
-    public bool HasChangedPlayer()
-    {
-        return hasChangedPlayer;
-    }
-    
-    public int GetRemainingLives()
-    {
-        return hasChangedPlayer ? 1 : 2;
     }
 }

@@ -25,7 +25,7 @@ public class PlayerCombat : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (time - lastAttack > 50)
+            if (time - lastAttack > 40)
             {
                 lastAttack = time;
                 Attack();
