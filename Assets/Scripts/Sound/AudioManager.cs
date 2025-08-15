@@ -47,8 +47,10 @@ public class AudioManager : MonoBehaviour
                 {   
                     audioSource.loop = false;
                     audioSource.pitch = 1.5f;
+                    audioSource.volume = 9.5f;
                     Play("Grito");
                     grito = true;
+                    audioSource.volume = volume;
                 }
                 else               
                 {

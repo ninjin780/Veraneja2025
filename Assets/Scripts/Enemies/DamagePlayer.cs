@@ -53,6 +53,9 @@ public class DamagePlayer : MonoBehaviour
     {
         Debug.Log("monstro has died");
         monstotr.SetActive(false);
-        SceneManager.LoadScene(22);
+        if (monstotr.tag == "Boss")
+        {
+            SceneManager.LoadScene(22);
+        }
     }
 }
