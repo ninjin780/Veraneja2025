@@ -9,15 +9,22 @@ public class AudioManager : MonoBehaviour
     public AudioSource audioSource;
     private Scene scene;
     private int sceneIndex;
-    public static int currentScene;
+    public static int currentScene = -1;
     public static bool aaaaaa = true;
     private bool grito;
 
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
-        currentScene = -1;
-        grito = false;
+        if (currentScene != -1)
+        {
+            Destroy(this);
+            return;
+        }else
+        {
+            DontDestroyOnLoad(gameObject);
+            grito = false;
+        }
+            
     }
 
     public void Play(string name)
@@ -35,7 +42,6 @@ public class AudioManager : MonoBehaviour
         {
             if (sceneIndex == 4)
             {
-                Debug.Log("1");
                 if (!grito)
                 {   
                     audioSource.loop = false;
@@ -52,18 +58,23 @@ public class AudioManager : MonoBehaviour
             else if (sceneIndex == 19)
             {   
                 Play("Jefe1");
+
             }
             else if (sceneIndex == 7 || sceneIndex == 8 || sceneIndex == 10 || sceneIndex == 11 || sceneIndex == 18)
             {
-               Play("Caves");
-               Debug.Log("3");
-
+                if (currentScene != 7 && currentScene != 8 && currentScene != 10 && currentScene != 11 && currentScene != 18)
+                {
+                    Play("Caves");
+                }               
             }
             else
             {
-                Play("Musica");
-                Debug.Log("2");
+                if (currentScene == 4 || currentScene == 19 || currentScene == 7 || currentScene == 8 || currentScene == 10 || currentScene == 11 || currentScene == 18 || currentScene == -1) { 
+                    Play("Musica");
+                    currentScene = sceneIndex;
+                }
             }
+            Debug.Log(currentScene);
             currentScene = sceneIndex;
         }
     }

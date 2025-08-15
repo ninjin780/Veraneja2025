@@ -12,12 +12,12 @@ public class ChangeAnimations : MonoBehaviour
         time++;
         if (time > 240)
         {
-            if (AudioManager.aaaaaa)
-            {
-                AudioManager.currentScene = -1;
-                AudioManager.aaaaaa = false;
-            }
             time = 0;
+        }
+        if (AudioManager.aaaaaa && time > 120)
+        {
+            AudioManager.currentScene = -1;
+            AudioManager.aaaaaa = false;
         }
     }
     void Start() { }
