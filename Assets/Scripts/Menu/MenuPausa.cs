@@ -1,11 +1,13 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MenuPausa : MonoBehaviour
 {
 
     public GameObject menuPausa;
     public static bool IsPaused = false;
+
 
     void Start()
     {
@@ -40,5 +42,18 @@ public class MenuPausa : MonoBehaviour
         menuPausa.SetActive(false);
         Time.timeScale = 1f;
         IsPaused = false;
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+        Debug.Log("Exit Game");
+    }
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1f;
+        IsPaused = false;
+        SceneManager.LoadScene(0);
+        Debug.Log("Load Main Menu");
     }
 }
