@@ -5,11 +5,11 @@ using System.Collections;
 public class EnemyAI : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed = 2f;
+    public float moveSpeed = 0.75f;
     public float stopDistance = 1f; // How close to get to player before stopping
 
     [Header("Knockback")]
-    public float knockbackForce = 5f;
+    public float knockbackForce = 2f;
     public float knockbackDuration = 0.3f;
 
     [Header("References")]

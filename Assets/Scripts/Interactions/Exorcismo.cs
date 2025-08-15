@@ -9,12 +9,14 @@ public class Exorcismo : MonoBehaviour
 
     private bool isExorcited = false;
     private Vector3 position;
+    private Vector3 scale;
     void Start()
     {
         animator = GetComponent<Animator>();
         npcInteractions = GetComponent<NPCsInteractions>();
         npcInteractions.enabled = false;
         position = transform.position;
+        scale = transform.localScale;
     }
     void Update()
     {
@@ -23,6 +25,7 @@ public class Exorcismo : MonoBehaviour
             animator.SetTrigger("Interacted");
             isExorcited = true;
             npcInteractions.enabled = true;
+            npcInteractions.Spawn();
         }
 
         if (CheckAnimationState())
@@ -33,6 +36,7 @@ public class Exorcismo : MonoBehaviour
         else
         {
             transform.position = position;
+            transform.localScale = scale;
         }
     }
     private bool CheckAnimationState()

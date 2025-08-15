@@ -24,6 +24,6 @@ public class SetPlayerInScene : MonoBehaviour
                 playerTransform.position = transformMedio.position;
                 break;
         }
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("SpawnPosition");
     }
 }

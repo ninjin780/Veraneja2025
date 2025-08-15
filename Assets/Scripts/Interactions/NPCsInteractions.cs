@@ -17,6 +17,28 @@ public class NPCsInteractions : MonoBehaviour
 
    public float wordSpeed;
    public bool playerIsClose;
+   
+   public void Spawn()
+   {
+      switch (NPC.name)
+      {
+         case "Boo":
+            PlayerPrefs.SetInt("Boo", 1);
+            break;
+         case "Milo":
+            PlayerPrefs.SetInt("Milo", 1);
+            break;
+         case "Steve":
+            PlayerPrefs.SetInt("Steve", 1);
+            break;
+         case "Virgil":
+            PlayerPrefs.SetInt("Virgil", 1);
+            break;
+         case "Ranastacio":
+            PlayerPrefs.SetInt("Ranastacio", 1);
+            break;
+      }
+   }
 
    private void Update()
    {

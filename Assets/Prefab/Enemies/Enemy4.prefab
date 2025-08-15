@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 8000411440042788069}
   - component: {fileID: 2958223661713956320}
   - component: {fileID: 4603898414667212202}
+  - component: {fileID: 1049550740141438510}
+  - component: {fileID: -3218886279361956976}
   m_Layer: 8
   m_Name: Enemy4
   m_TagString: Untagged
@@ -198,6 +200,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff1b4692a3b34e7448b67f7fd8264736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monstotr: {fileID: 0}
+  monstotr: {fileID: 9143863464762327393}
   maxHp: 30
   currentHp: 0
+--- !u!114 &1049550740141438510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9143863464762327393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2560e82df0e6240acc6b9b7973558a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2958223661713956320}
+--- !u!114 &-3218886279361956976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9143863464762327393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97a45371f6de1534e95663145feea065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  stopDistance: 1
+  knockbackForce: 5
+  knockbackDuration: 0.3

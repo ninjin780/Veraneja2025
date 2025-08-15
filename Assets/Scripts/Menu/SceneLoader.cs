@@ -4,6 +4,7 @@ public class SceneLoader : MonoBehaviour
 {
     public void Jugar()
     {
+        PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("SpawnPosition",4);
         SceneManager.LoadScene(4);
     }

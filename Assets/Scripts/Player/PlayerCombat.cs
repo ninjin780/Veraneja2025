@@ -52,12 +52,12 @@ public class PlayerCombat : MonoBehaviour
 
     public void RemoveLife (int damage) {
 
-        vidaActual = vidaActual - damage;
+        vidaActual -= damage;
 
         if (vidaActual <= 0)
         {
             Debug.Log("Player has died");
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(21);
         }
 
     }
