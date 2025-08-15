@@ -845,8 +845,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1687180276}
     - target: {fileID: 5376952090396284995, guid: c1d1dcae55fbf154c8c9ef381a5abc13, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376952090396284995, guid: c1d1dcae55fbf154c8c9ef381a5abc13, type: 3}
       propertyPath: 'dialogue.Array.data[0]'
-      value: Hola de nuevo
+      value: Hola de nuevo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376952090396284995, guid: c1d1dcae55fbf154c8c9ef381a5abc13, type: 3}
+      propertyPath: 'dialogue.Array.data[1]'
+      value: "\u2026Gracias. Yo que t\xFA, me ir\xEDa de aqu\xED lo m\xE1s r\xE1pido
+        posible. "
       objectReference: {fileID: 0}
     - target: {fileID: 8263429525922560368, guid: c1d1dcae55fbf154c8c9ef381a5abc13, type: 3}
       propertyPath: m_LocalPosition.x
