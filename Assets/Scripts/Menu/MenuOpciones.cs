@@ -3,18 +3,25 @@ using Unity.Audio;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 
 public class MenuOpciones : MonoBehaviour
-{
-    [SerializeField] private AudioMixer audioMixer;
+
+{ 
+    public Slider volumeSlider;
     public void Fullscreen(bool fullscreen)
     {
         Screen.fullScreen = fullscreen;
     }
 
-    public void ChangeVolume(float volume)
+    public void ChangeVolume(float v)
     {
-        audioMixer.SetFloat("Volume", volume);
+        AudioManager.volume = v; 
+
+    }
+    void Start()
+    {
+        volumeSlider.value = AudioManager.volume;
     }
 }

@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
-    public AudioMixer audioMixer;
     public AudioSource audioSource;
     private Scene scene;
     private int sceneIndex;
     public static int currentScene = -1;
     public static bool aaaaaa = true;
+    public static float volume = 1f;
     private bool grito;
 
     void Awake()
@@ -36,6 +36,7 @@ public class AudioManager : MonoBehaviour
 
     void FixedUpdate()
     {
+        audioSource.volume = volume;
         scene = SceneManager.GetActiveScene();
         sceneIndex = scene.buildIndex;
         if (currentScene != sceneIndex)
@@ -45,6 +46,7 @@ public class AudioManager : MonoBehaviour
                 if (!grito)
                 {   
                     audioSource.loop = false;
+                    audioSource.pitch = 1.5f;
                     Play("Grito");
                     grito = true;
                 }
