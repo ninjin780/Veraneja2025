@@ -1534,6 +1534,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4710801905525158704, guid: 24913180676e93844b8eb80113541168, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8131795888778385437}
+    - target: {fileID: 4710801905525158704, guid: 24913180676e93844b8eb80113541168, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLine
+      objectReference: {fileID: 0}
     - target: {fileID: 8311542867518400875, guid: 24913180676e93844b8eb80113541168, type: 3}
       propertyPath: m_Name
       value: Steve
@@ -1551,6 +1559,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24913180676e93844b8eb80113541168, type: 3}
+--- !u!114 &8131795888778385437 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6641768890986547303, guid: 24913180676e93844b8eb80113541168, type: 3}
+  m_PrefabInstance: {fileID: 8131795888778385436}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f3559000f3e7f1488210554b1764559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
