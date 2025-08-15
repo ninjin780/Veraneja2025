@@ -1703,6 +1703,10 @@ PrefabInstance:
       value: Yisus
       objectReference: {fileID: 0}
     - target: {fileID: 2466236803966100167, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466236803966100167, guid: 7217ac82c73b5654099d201d0157f7c8, type: 3}
       propertyPath: m_MaskInteraction
       value: 0
       objectReference: {fileID: 0}
@@ -1822,7 +1826,34 @@ MonoBehaviour:
   dialogueText: {fileID: 399367982}
   name: {fileID: 8340670170202163977}
   dialogue:
-  - puta
+  - "Oye, t\xFA! No deber\xEDas caminar por estos bosques, son peligrosos."
+  - "Ese grito\u2026Hay una fuerza malvada que nos acecha. Te recomiendo que regreses
+    por donde viniste, nosotros ya estamos perdidos. Cada d\xEDa perdemos a m\xE1s
+    gente."
+  - "\xBFQuieres ayudarnos? No, no te preocupes por nosotros, sal de aqu\xED mientras
+    puedas. "
+  - "Admiro tu amabilidad. Yo he intentado ayudarles pero no s\xE9 luchar, no puedo
+    hacer mucho m\xE1s que atender a los heridos. "
+  - "Soy Yisus, el cura de esta iglesia. Hace un tiempo que notamos que desaparec\xEDan
+    personas por el pueblo, pero no fue hasta hace poco que fuimos atacados por un
+    demonio muy grande y poderoso. "
+  - "No s\xE9 c\xF3mo escap\xF3 de su sello, pero lanz\xF3 una maldici\xF3n sobre
+    el pueblo y est\xE1 tomando a nuestra gente..."
+  - 'Secuestrando, poseyendo, asesinando. No quiero meterte en esta crisis, pero
+    me temo que ya no tenemos opciones. '
+  - Si de verdad te dispones a ayudarnos te estaremos eternamente agradecidos.
+  - "He localizado a 5 animales que todav\xEDa pueden ser salvados. Sus almas luchan
+    contra la maldici\xF3n pero no podr\xE1n resistir mucho m\xE1s."
+  - "Al suroeste est\xE1n Milo el gato y Boo el murci\xE9lago. Al sureste est\xE1
+    Ranastacio la Rana y Virgil la marsopa y al Sur est\xE1 Steve el pukeko."
+  - "Al sur de todo est\xE1 la cueva donde estaba encerrado el demonio. "
+  - "No vayas hacia all\xED, es demasiado fuerte, incluso m\xE1s fuerte si todav\xEDa
+    conserva cautivas las almas de nuestros hermanos y hermanas."
+  - "Pelear contra \xE9l no es una opci\xF3n, somos demasiado peque\xF1os."
+  - "Lamento mucho tener que poner esta carga sobre t\xED. No puedo hacer m\xE1s
+    que ofrecerte mi bendici\xF3n en caso de que te encuentres con alguien que necesite
+    ayuda."
+  - "Ten mucho cuidado, joven. Que el se\xF1or te bendiga y resguarde tu alma. "
   wordSpeed: 0
   playerIsClose: 0
 --- !u!1001 &3249650089147194605

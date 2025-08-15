@@ -8,6 +8,7 @@ public class SoundsReproductions : MonoBehaviour
     private Scene scene;
     private int sceneIndex;
     private bool IsActive = false;
+    private bool grito = false;
     void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();
@@ -15,7 +16,10 @@ public class SoundsReproductions : MonoBehaviour
         sceneIndex = scene.buildIndex;
         if (sceneIndex == 4)
         {
+            if (!grito)
+            {
             StartCoroutine(Grito());
+            }
             audioManager.Play("Iglesia");
         }
         else if (sceneIndex == 19)
@@ -34,6 +38,7 @@ public class SoundsReproductions : MonoBehaviour
 
     IEnumerator Grito()
     {
+        grito = true;
         audioManager.Play("Grito");
         yield return new WaitForSeconds(3f);
     }

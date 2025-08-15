@@ -14,6 +14,7 @@ public class PlayerCombat : MonoBehaviour
     public int lastAttack = 0;
     public int time = 0;
     public int attackDamage = 10;
+    private bool died = false;
 
     private void FixedUpdate()
     {
@@ -50,16 +51,19 @@ public class PlayerCombat : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
+    public float GetCurrentHealth()
+    {
+        return vidaActual;
+    }
+
+    public void SetCurrentHealth(float health)
+    {
+        vidaActual = health;
+    }
+
     public void RemoveLife (int damage) {
-
+        Debug.Log(damage);
         vidaActual -= damage;
-
-        if (vidaActual <= 0)
-        {
-            Debug.Log("Player has died");
-            SceneManager.LoadScene(21);
-        }
-
     }
 
 }

@@ -1,10 +1,28 @@
 fileFormatVersion: 2
-guid: ae74b9dd18fcba24f908373b100f1ff6
+guid: 87a2dfee88a33944e85cd7358b19e99c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6937817954938267909
-    second: 2_0
+      213: -5099292496197868168
+    second: 10_0
+  - first:
+      213: -6666162448854811074
+    second: 10_1
+  - first:
+      213: -8415742079868506637
+    second: 10_2
+  - first:
+      213: -5477375811331969103
+    second: 10_3
+  - first:
+      213: 8938354998757869697
+    second: 10_4
+  - first:
+      213: -1015556755965453039
+    second: 10_5
+  - first:
+      213: 4078915639900477675
+    second: 10_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +118,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2_0
+      name: 10_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 22
-        width: 396
-        height: 396
+        x: 0
+        y: 0
+        width: 765
+        height: 999
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5092c600ca4184060800000000000000
-      internalID: 6937817954938267909
+      spriteID: 875af4eed7cab39b0800000000000000
+      internalID: -5099292496197868168
       vertices: []
       indices: 
       edges: []
@@ -125,7 +143,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0073d5dc16ade1f4a904ecd06a131692
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +153,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      2_0: 6937817954938267909
+      10_0: -5099292496197868168
+      10_1: -6666162448854811074
+      10_2: -8415742079868506637
+      10_3: -5477375811331969103
+      10_4: 8938354998757869697
+      10_5: -1015556755965453039
+      10_6: 4078915639900477675
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

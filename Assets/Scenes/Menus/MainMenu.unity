@@ -1702,6 +1702,26 @@ PrefabInstance:
       propertyPath: sounds.Array.data[5].name
       value: Jefe2
       objectReference: {fileID: 0}
+    - target: {fileID: 4473240334825043184, guid: a301eb16deae1944bbde60d80e0b5257, type: 3}
+      propertyPath: sounds.Array.data[1].pitch
+      value: 1.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473240334825043184, guid: a301eb16deae1944bbde60d80e0b5257, type: 3}
+      propertyPath: sounds.Array.data[2].pitch
+      value: 1.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473240334825043184, guid: a301eb16deae1944bbde60d80e0b5257, type: 3}
+      propertyPath: sounds.Array.data[3].pitch
+      value: 1.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473240334825043184, guid: a301eb16deae1944bbde60d80e0b5257, type: 3}
+      propertyPath: sounds.Array.data[4].pitch
+      value: 1.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473240334825043184, guid: a301eb16deae1944bbde60d80e0b5257, type: 3}
+      propertyPath: sounds.Array.data[5].pitch
+      value: 1.75
+      objectReference: {fileID: 0}
     - target: {fileID: 6056846357581629359, guid: a301eb16deae1944bbde60d80e0b5257, type: 3}
       propertyPath: m_Name
       value: AudioManager

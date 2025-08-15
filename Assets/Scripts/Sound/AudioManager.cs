@@ -21,6 +21,8 @@ public class AudioManager : MonoBehaviour
     public void Play(string name)
     {
         Sound sound = Array.Find(sounds, sound => sound.name == name);
+        sound.source.outputAudioMixerGroup = audioMixer.outputAudioMixerGroup;
         sound.source.Play();
+        
     }
 }
