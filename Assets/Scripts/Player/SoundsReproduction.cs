@@ -9,9 +9,13 @@ public class SoundsReproductions : MonoBehaviour
     private int sceneIndex;
     private bool IsActive = false;
     private bool grito = false;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     void Start()
     {
-        audioManager = FindObjectOfType<AudioManager>();
         scene = SceneManager.GetActiveScene();
         sceneIndex = scene.buildIndex;
         if (sceneIndex == 4)
